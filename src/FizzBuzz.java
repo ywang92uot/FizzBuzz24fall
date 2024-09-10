@@ -4,13 +4,14 @@
 class FizzBuzz {
 
     public static void main(String[] args) {
+        System.out.println(args[1]);
         int i = 1;
         while (i < 100) {
-            i = get_I(i);
+            i = getI(i);
         }
     }
 
-    private static int get_I(int i) {
+    public static int getI(int i) {
         // Find out which numbers divide i.
         boolean divisibleBy3 = i % 3 == 0;
         boolean divisibleBy5 = i % 5 == 0;
